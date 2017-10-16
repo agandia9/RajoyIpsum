@@ -2,10 +2,14 @@ import React, { Component } from 'react'
 import './styles.css'
 import data from '../../data/data.json'
 import OptionsForm from '../OptionsForm/OptionsForm'
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+
+
 class IpsumForm extends Component {
 	constructor() {
 		super();
 		this.state={
+			copied: false,
 			text: '',
 			words:'',
 			paragraphs: "1",
@@ -51,11 +55,14 @@ class IpsumForm extends Component {
 				<div className="row col-xs-8">
 					<textarea type="text" value={this.state.words}/>
 					<button className='btn btn-default' onClick={this.generateIpsum}>Generar Ipsum</button>
+					 <CopyToClipboard text={this.state.words}
+				          onCopy={() => this.setState({copied: true})}>
+				          <button className="btn btn-default">Copiar al portapapeles</button>
+				        </CopyToClipboard>
 				</div>
 				<OptionsForm className="row col-xs-4"
 					state={this.state}
 				/>
-				
 		</div>
 	}
 }
