@@ -9,12 +9,19 @@ textarea{
 	margin-bottom: 30px;
 }
 .row{
-	/*display: inline-grid;*/
+	display: inline-grid;
+
+}
+
+.row button{
+	width: 500px;
 }
 .jumbotron{
-	background-color: #a1b9d1;
+	margin: 25px;
+	position: relative;
 	margin-bottom: 10px;
 	height: 100%;
+	background-color: transparent!important;
 	display: flex;
-	
+
 }

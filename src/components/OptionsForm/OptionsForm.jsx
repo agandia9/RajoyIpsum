@@ -17,7 +17,7 @@ class OptionsForm extends Component {
 	}
 	render(){
 		return <div>
-					<div className="list-group col-xs-6 col-md-6" onClick={this.setParagraphs}>
+					<div className="list-group col-xs-6 col-sm-6 col-md-6" onClick={this.setParagraphs}>
 					  <p>Cuantos párrafos?</p>
 					  <button type="button" className="list-group-item" value="1">1</button>
 					  <button type="button" className="list-group-item" value="2">2</button>
@@ -26,7 +26,7 @@ class OptionsForm extends Component {
 					  <button type="button" className="list-group-item" value="5">5</button>
 					  <button type="button" className="list-group-item" value="6">6</button>
 					</div>
-					<div className="list-group col-xs-6 col-md-6">
+					<div className="list-group col-xs-6 col-sm-6 col-md-6">
 					<p>Estilos?</p>
 					  <button type="button" className="list-group-item" onClick={this.setHTML}>Incluir tags HTML </button>
 					  <button type="button" className="list-group-item">Incluir estilos</button>

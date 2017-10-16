@@ -18,3 +18,16 @@ footer {
 footer p{
 	margin-top: 15px;
 }
+h3{
+	font-size: 20px!important;
+	font-style: italic;
+	margin-bottom: 0!important;
+}
+
+.wall{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity : 0.3;
+	background-image: url('http://www.kissfm.es/wp-content/uploads/2016/11/rajoy.jpg');
+}
