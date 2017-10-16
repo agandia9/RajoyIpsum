@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './styles.css'
 
-class IpsumForm extends Component {
+class OptionsForm extends Component {
 	render(){
 		return <div className='jumbotron row'>
 			<textarea type="text"/>
@@ -10,4 +10,4 @@ class IpsumForm extends Component {
 	}
 }
 
-export default IpsumForm
+export default OptionsForm
