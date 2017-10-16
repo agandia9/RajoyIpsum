@@ -14,6 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>RajoyIpsum 💰💶💸</h1>
+        <h3>Genera unos párrafos muy españoles al más puro estilo del Partido Popular💃🏻</h3>
         <IpsumForm/>
         <footer>
           <p>Financiado ilegalmente con ♥ por el <a href="">PP</a></p>

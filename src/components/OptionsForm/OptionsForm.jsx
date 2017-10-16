@@ -3,6 +3,7 @@ import './styles.css'
 
 class OptionsForm extends Component {
 	setParagraphs = (event)=>{
+
 		console.log(this.props.state)
 		this.props.state.paragraphs= event.target.value
 	}
@@ -16,7 +17,6 @@ class OptionsForm extends Component {
 	}
 	render(){
 		return <div>
-				<div className="optionsDiv">
 					<div className="list-group col-xs-6 col-md-6" onClick={this.setParagraphs}>
 					  <p>Cuantos párrafos?</p>
 					  <button type="button" className="list-group-item" value="1">1</button>
@@ -28,10 +28,9 @@ class OptionsForm extends Component {
 					</div>
 					<div className="list-group col-xs-6 col-md-6">
 					<p>Estilos?</p>
-					  <button type="button" className="list-group-item" onClick={this.setHTML}>Incluir HTML tags</button>
+					  <button type="button" className="list-group-item" onClick={this.setHTML}>Incluir tags HTML </button>
 					  <button type="button" className="list-group-item">Incluir estilos</button>
 					</div>
-				</div>
 			</div>
 	}
 }

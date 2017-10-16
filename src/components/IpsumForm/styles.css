@@ -1,7 +1,7 @@
 textarea{
 	width: 650px;
 	height: 400px;
-	font-size: 17px;
+	font-size: 18px;
 	resize: none;
 	-webkit-box-shadow: 10px 10px 0px 10px rgba(0,0,0,0.67);
 	-moz-box-shadow: 10px 10px 0px 10px rgba(0,0,0,0.67);
@@ -9,10 +9,12 @@ textarea{
 	margin-bottom: 30px;
 }
 .row{
-	display: inline-grid;
+	/*display: inline-grid;*/
 }
 .jumbotron{
 	background-color: #a1b9d1;
 	margin-bottom: 10px;
 	height: 100%;
+	display: flex;
+	
 }

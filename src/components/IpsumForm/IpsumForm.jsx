@@ -28,31 +28,34 @@ class IpsumForm extends Component {
 		    return array;
 		}
 		var textToPrint = []
-		this.state.text.forEach((text)=>{
-			textToPrint.push(text.text)
-		})
-		textToPrint = shuffleArray(textToPrint).splice(0,(8*parseInt(this.state.paragraphs)))
     	if(this.state.includeHTML=== true){
-    		this.setState({
-    			words: textToPrint.join('<p>').replace(/\./g,'.</p> ')
-    		})
+    		this.state.text.forEach((text)=>{
+				textToPrint.push('<p>' + text.text + '</p>')
+			})
+			textToPrint = shuffleArray(textToPrint).splice(0,(8*parseInt(this.state.paragraphs)))
+	    		this.setState({
+	    			words: textToPrint.join('').replace(/\./g,'.')
+	    	})
     	}else{
-    		this.setState({
-    			words: textToPrint.join('').replace(/\./g,'. ')
-    		})
-    	}
-    	
+    		this.state.text.forEach((text)=>{
+				textToPrint.push('' + text.text)
+			})
+			textToPrint = shuffleArray(textToPrint).splice(0,(8*parseInt(this.state.paragraphs)))
+	    		this.setState({
+	    			words: textToPrint.join('').replace(/\./g,'. ')
+	    		})
+	    	}
 	}
 	render(){
 		return <div className='jumbotron'>
-			<div className="row">
-				<textarea type="text" value={this.state.words}/>
-				<button className='btn btn-default' onClick={this.generateIpsum}>Generar Ipsum</button>
+				<div className="row col-xs-8">
+					<textarea type="text" value={this.state.words}/>
+					<button className='btn btn-default' onClick={this.generateIpsum}>Generar Ipsum</button>
+				</div>
+				<OptionsForm className="row col-xs-4"
+					state={this.state}
+				/>
 				
-			</div>
-			<OptionsForm 
-				state={this.state}
-			/>
 		</div>
 	}
 }
