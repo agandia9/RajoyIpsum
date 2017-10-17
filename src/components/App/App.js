@@ -12,7 +12,7 @@ class App extends Component {
         <h3>Selecciona el números de párrafos que necesitas y si necesitas estilos... y listo para pegar en tu web!</h3>
         <IpsumForm/>
         <footer>
-          <p>Financiado ilegalmente con ♥ por el <a href="">PP</a></p>
+          <p>Made with ♥️ by <a href="www.github.com/agandia9">@agandia9</a></p>
         </footer>
       </div>
     );

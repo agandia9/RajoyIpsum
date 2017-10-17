@@ -1,19 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-### RajoyIpsum!
+### __RajoyIpsum!__
 
 #### Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+This is a simple application build in **React** that generates Lorem Ipsum-style text lines by the president of Spain randomly.
+Phrases have been compiled from various websites like:
+
+- http://humor.atresmedia.com/liopardo/memes/las-22-frases-mas-miticas-de-mariano-rajoy-que-pasaran-a-la-historia#sthash.tCqYHI5s.dpbs
+- https://es.wikiquote.org/wiki/Mariano_Rajoy
+- https://frasesepicas.es/frases-mariano-rajoy-graciosas-celebres/
+- ...
 
 #### Installation
 
-Provide code examples and explanations of how to get the project.
+```console
+npm install // for install all dependences
+npm run start // run the app
+```
 
-#### Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-#### License
-
-A short snippet describing the license (MIT, Apache, etc.)

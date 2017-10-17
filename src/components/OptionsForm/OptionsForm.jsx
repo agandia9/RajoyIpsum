@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import './styles.css'
 
 class OptionsForm extends Component {
-	setParagraphs = (event)=>{
-
-		console.log(this.props.state)
+	setParagraphs = (event) =>{
 		this.props.state.paragraphs= event.target.value
 	}
 	setHTML = () => {
@@ -29,7 +27,6 @@ class OptionsForm extends Component {
 					<div className="list-group col-xs-6 col-sm-6 col-md-6">
 					<p>Estilos?</p>
 					  <button type="button" className="list-group-item" onClick={this.setHTML}>Incluir tags HTML </button>
-					  <button type="button" className="list-group-item">Incluir estilos</button>
 					</div>
 			</div>
 	}

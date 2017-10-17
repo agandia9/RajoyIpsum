@@ -56,9 +56,9 @@ class IpsumForm extends Component {
 					<textarea type="text" value={this.state.words}/>
 					<button className='btn btn-default' onClick={this.generateIpsum}>Generar Ipsum</button>
 					 <CopyToClipboard text={this.state.words}
-				          onCopy={() => this.setState({copied: true})}>
-				          <button className="btn btn-default">Copiar al portapapeles</button>
-				        </CopyToClipboard>
+				        onCopy={() => this.setState({copied: true})}>
+				        <button className="btn btn-default">Copiar al portapapeles</button>
+				    </CopyToClipboard>
 				</div>
 				<OptionsForm className="row col-xs-4"
 					state={this.state}

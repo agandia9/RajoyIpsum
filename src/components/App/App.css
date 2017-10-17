@@ -1,33 +1,35 @@
-*{
-  font-family: 'Titillium Web', sans-serif;
+* {
+	font-family: 'Titillium Web', sans-serif;
 }
 
 .App {
-  text-align: center;
-  height: 100%;
+	text-align: center;
+	height: 100%;
 }
 
 footer {
-  position:fixed;
-   left:0px;
-   bottom:0px;
-   height:50px;
-   width:100%;
-   background:lightgrey;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+	background: lightgrey;
 }
-footer p{
+
+footer p {
 	margin-top: 15px;
 }
-h3{
+
+h3 {
 	font-size: 20px!important;
 	font-style: italic;
 	margin-bottom: 0!important;
 }
 
-.wall{
+.wall {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	opacity : 0.3;
+	opacity: 0.3;
 	background-image: url('http://www.kissfm.es/wp-content/uploads/2016/11/rajoy.jpg');
 }
