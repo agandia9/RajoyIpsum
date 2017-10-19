@@ -8,11 +8,11 @@ class App extends Component {
       <div className="App">
         <h1>RajoyIpsum 💰💶💸</h1>
         <div className="wall"></div>
-        <h3>Genera unos párrafos muy <strong>españoles</strong> y mucho <strong>españoles</strong> al más puro estilo del Partido Popular💃🏻</h3>
-        <h3>Selecciona el números de párrafos que necesitas y si necesitas estilos... y listo para pegar en tu web!</h3>
+        <h3>Genera párrafos muy <strong>españoles</strong> y mucho <strong>españoles</strong> al más puro MarianoStyle!💃🏻</h3>
+        <h3>Selecciona el números de párrafos que necesitas y si necesitas incluir tags... y listo para pegar en tu web!</h3>
         <IpsumForm/>
         <footer>
-          <p>Made with ♥️ by <a href="www.github.com/agandia9">@agandia9</a></p>
+          <p>Made with ♥️ by <a href="http://www.github.com/agandia9">@agandia9</a></p>
         </footer>
       </div>
     );

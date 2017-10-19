@@ -4,3 +4,9 @@
 	width: 100%;
 	margin-left: 0;
 }
+.optionsButton {
+	font-size: 18px !important;
+	text-align: center !important;
+	margin: auto !important;
+    box-sizing: border-box !important;
+}

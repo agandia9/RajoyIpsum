@@ -21,6 +21,7 @@ class IpsumForm extends Component {
     		text: data
     	})
 	}
+
 	generateIpsum = () => {
 		function shuffleArray(array) {
 		    for (var i = array.length - 1; i > 0; i--) {
@@ -36,7 +37,7 @@ class IpsumForm extends Component {
     		this.state.text.forEach((text)=>{
 				textToPrint.push('<p>' + text.text + '</p>')
 			})
-			textToPrint = shuffleArray(textToPrint).splice(0,(8*parseInt(this.state.paragraphs)))
+			textToPrint = shuffleArray(textToPrint).splice(0,(4*parseInt(this.state.paragraphs)))
 	    		this.setState({
 	    			words: textToPrint.join('').replace(/\./g,'.')
 	    	})
@@ -44,7 +45,7 @@ class IpsumForm extends Component {
     		this.state.text.forEach((text)=>{
 				textToPrint.push('' + text.text)
 			})
-			textToPrint = shuffleArray(textToPrint).splice(0,(8*parseInt(this.state.paragraphs)))
+			textToPrint = shuffleArray(textToPrint).splice(0,(4*parseInt(this.state.paragraphs)))
 	    		this.setState({
 	    			words: textToPrint.join('').replace(/\./g,'. ')
 	    		})
@@ -52,9 +53,12 @@ class IpsumForm extends Component {
 	}
 	render(){
 		return <div className='jumbotron'>
-				<div className="row col-xs-8">
+				<div className="row col-xs-12 col-sm-8">
+					<div class="selected-options">
+						<span> <p>Parrafos seleccionados:  {this.state.paragraphs} </p></span>
+						<span> <p>Tags: {this.state.includeHTML ? 'Si':'No'} </p></span>
+					</div>
 					<textarea type="text" value={this.state.words}/>
-					<button className='btn btn-default' onClick={this.generateIpsum}>Generar Ipsum</button>
 					 <CopyToClipboard text={this.state.words}
 				        onCopy={() => this.setState({copied: true})}>
 				        <button className="btn btn-default">Copiar al portapapeles</button>
@@ -62,6 +66,7 @@ class IpsumForm extends Component {
 				</div>
 				<OptionsForm className="row col-xs-4"
 					state={this.state}
+					generateIpsum={this.generateIpsum}
 				/>
 		</div>
 	}
