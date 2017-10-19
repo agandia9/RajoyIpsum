@@ -1,6 +1,10 @@
 @media (max-width: 1100px){
 	.jumbotron{
 		display: block !important;
+		margin-left: 10% !important;
+	}
+	.footer{
+		display: none;
 	}
 }
 
@@ -37,4 +41,10 @@ textarea{
 }
 .selected-options span{
 	margin-right: 10%;
+}
+.btn, .btn:hover, .btn:focus{
+	background-color: #5486ea;
+	border-radius: 5px;
+	color: lightgrey;
+	border:0.5px;
 }

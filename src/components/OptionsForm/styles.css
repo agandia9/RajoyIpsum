@@ -10,3 +10,9 @@
 	margin: auto !important;
     box-sizing: border-box !important;
 }
+
+.list-group button, button:hover,button:focus{
+	background-color: #5486ea !important;
+	border-radius: 5px !important;
+	color: lightgrey !important;
+}
