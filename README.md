@@ -17,3 +17,6 @@ npm install // for install all dependences
 npm run start // run the app
 ```
 
+#### Production Version
+
+You can find online version => http://rajoyipsum.surge.sh/

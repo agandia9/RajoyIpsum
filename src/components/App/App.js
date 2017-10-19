@@ -13,6 +13,7 @@ class App extends Component {
         <IpsumForm/>
         <footer>
           <p>Made with ♥️ by <a href="http://www.github.com/agandia9">@agandia9</a></p>
+          <p>Code repo <a href="https://github.com/agandia9/RajoyIpsum">here</a></p>
         </footer>
       </div>
     );
