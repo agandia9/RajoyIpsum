@@ -53,7 +53,7 @@ class IpsumForm extends Component {
 	}
 	render(){
 		return <div className='jumbotron'>
-				<div className="row col-xs-12 col-sm-8">
+				<div className="row col-xs-12 col-sm-7">
 					<div class="selected-options">
 						<span> <p>Parrafos seleccionados:  {this.state.paragraphs} </p></span>
 						<span> <p>Tags: {this.state.includeHTML ? 'Si':'No'} </p></span>
@@ -64,6 +64,7 @@ class IpsumForm extends Component {
 				        <button className="btn btn-default">Copiar al portapapeles</button>
 				    </CopyToClipboard>
 				</div>
+				<div className="row col-xs-1"></div>
 				<OptionsForm className="row col-xs-4"
 					state={this.state}
 					generateIpsum={this.generateIpsum}

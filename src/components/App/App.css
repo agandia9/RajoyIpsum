@@ -1,7 +1,12 @@
 * {
 	font-family: 'Titillium Web', sans-serif;
 }
+h1{
+	margin-top: 0px !important;
+	padding-top: 20px;
+	padding-bottom: 10px;
 
+}
 .App {
 	text-align: center;
 	height: 100%;
@@ -31,5 +36,11 @@ h3 {
 	height: 100%;
 	width: 100%;
 	opacity: 0.3;
-	background-image: url('http://www.kissfm.es/wp-content/uploads/2016/11/rajoy.jpg');
+	background: url('http://www.kissfm.es/wp-content/uploads/2016/11/rajoy.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   background-attachment: fixed;
+
 }

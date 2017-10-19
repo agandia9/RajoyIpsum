@@ -1,10 +1,19 @@
-@media (max-width: 1100px){
+@media (max-width: 1300px){
 	.jumbotron{
 		display: block !important;
-		margin-left: 10% !important;
+		margin-left: 15% !important;
 	}
-	.footer{
-		display: none;
+}
+
+@media (max-width: 730px){
+	.jumbotron{
+		display: block !important;
+		margin-left: 2.5% !important;
+	}
+	textarea{
+		width: 550px !important;
+		height: 400px !important;
+		font-size: 15px !important;
 	}
 }
 
@@ -20,7 +29,6 @@ textarea{
 }
 .row{
 	display: inline-grid;
-
 }
 
 .row button{
@@ -30,11 +38,13 @@ textarea{
 }
 .jumbotron{
 	margin: 25px;
+	padding-top: 0;
 	position: relative;
 	margin-bottom: 10px;
 	height: 100%;
 	background-color: transparent!important;
 	display: flex;
+	margin-left: 15%;
 }
 .selected-options{
 	display: inline-flex;
