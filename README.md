@@ -2,7 +2,7 @@
 
 #### Synopsis
 
-This is a simple application build in **React** that generates Lorem Ipsum-style text lines by the president of Spain randomly.
+This is a simple application build in **React** that generates Lorem Ipsum-style text lines by the president of 🇪🇸 randomly.
 Phrases have been compiled from various websites like:
 
 - http://humor.atresmedia.com/liopardo/memes/las-22-frases-mas-miticas-de-mariano-rajoy-que-pasaran-a-la-historia#sthash.tCqYHI5s.dpbs
